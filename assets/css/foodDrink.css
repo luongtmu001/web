@@ -1,0 +1,91 @@
+/* drink start */
+.content {
+    margin-top: 6.5rem;
+    background-color: #f4f4f4;
+}
+.product--search{
+    
+}
+.product--search input{
+    width: 50%;
+    margin: 30px auto;
+    background-color: white;
+    border: none;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+.product--search i{
+
+}
+.category__heading {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--head-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.home-product {
+    position: relative;
+    top: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform linear 0.3s;
+}
+.home-product:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.2);
+}
+.home-product__item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.home-product__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.home-product__rating{
+    display: flex;
+    font-size: 1.6rem;
+    margin: 10px 0;
+    color: var(--star-color);
+}
+.home-product__heading {
+    font-size: 1.8rem;
+    color: var(--head-color);
+    margin-bottom: 10px;
+}
+.home-product__detail {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+.home-product-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+.home-product-wrap__button{
+    display: inline-block;
+    background-color: var(--button-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.home-product-wrap__price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--head-color);
+}

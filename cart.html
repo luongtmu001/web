@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo3.png" type="image/gif" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nautilus-pompilius" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">                
+    <title>Vietnamese Food</title>
+</head>
+<body>
+    <main>
+        <div class="header2">
+            <header class="header-nav2">
+                <div class="header-nav__head">
+                    <a href="" class="header-nav__item header__cart header-fix">
+                        <img src="./assets/img/logo4.png" alt="" class="header-nav__logo">
+                    </a>
+                </div>
+                <div class="header-nav__list">
+                    <a href="index.html" class="header-nav__item header__cart">Trang chủ</a>
+                    <a href="#" class="header-nav__item header__cart" id = "menu1">Ẩm thực Việt Nam
+                        <i class="fas fa-angle-down"></i>
+                        <!-- <i class="fas fa-angle-up "></i> -->
+                        <ul class="header-nav__menu-item">
+                            <li id = "NorthFoodLink" class = "menu-item_list">Ẩm thực miền Bắc</li>
+                            <li id = "CentralFoodLink" class = "menu-item_list">Ẩm thực miền Trung</li>
+                            <li id = "SouthFoodLink" class = "menu-item_list">Ẩm thực miền Nam</li>
+                            <li id = "MinorityFoodLink" class = "menu-item_list">Ẩm thực các dân tộc</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="header-nav__item header__cart">Thực đơn
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="header-nav__menu-item">
+                            <li id = "foodLink" class = "menu-item_list">Đồ ăn</li>
+                            <li id = "drinkLink" class = "menu-item_list">Đồ uống</li>
+                        </ul>
+                    </a>
+                    <a href="order.html" class="header-nav__item header__cart">Đặt bàn</a>
+                    <a href="#footer" class="header-nav__item header__cart">Liên hệ</a>
+                    <a href="cart.html" class="header-nav__item header__cart header-nav__cart">
+                        <div class="cart-list-quantity">
+                            <span class= "cart-list-quantity__current">3</span>
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                        <ul class="cart-list">
+                            <li class="cart-list__item">
+                                <img src="./assets/img/comrangnepcam.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm rang nếp cẩm</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">69.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/cơm-bò-nướng-sốt-tiêu.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm bò nướng sốt tiêu</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">89.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Bún bò kho</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">79.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">2</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button class ="cart-list__button">Xem tất cả</button>
+                        </ul>
+                    </a>
+                </div>
+            </header>
+        </div>
+        <div class="nav-link">
+            <div class="grid nav-link-box">
+                <a href="./index.html" class="nav-link__home">Trang chủ / </a>
+                <p class = "nav-link__current"> Giỏ hàng</p>
+            </div>
+        </div>
+        <section class = "cart-info">
+            <h3 class="cart-info__name">Giỏ hàng của bạn</h3>
+            <hr>
+            <ul class="cart-info-wrap">
+                <li class="cart-info__item">
+                    <img src="./assets/img/comrangnepcam.jpg" alt="" class="cart-info__item-img">
+                    <div class="cart-info__item-wrap">
+                        <div class="cart-info__item-des">
+                            <h3 class="item-des__name">Cơm rang nếp cẩm</h3>
+                            <p class="item-des__price">69.000Đ</p>
+                            <form action="" class="item-des-number">
+                                <button class="item-des-number__btn">-</button>
+                                <button class="item-des-number__qtt">1</button>
+                                <button class="item-des-number__btn">+</button>
+                            </form>
+                         </div>
+                        <div class="cart-info__item-total">
+                            <i class="fas fa-times item-total__icon"></i>
+                             <p class = "item-total__price-all">69.000Đ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-info__item">
+                    <img src="./assets/img/cơm-bò-nướng-sốt-tiêu.jpg" alt="" class="cart-info__item-img">
+                    <div class="cart-info__item-wrap">
+                        <div class="cart-info__item-des">
+                            <h3 class="item-des__name">Cơm bò nướng sốt tiêu</h3>
+                            <p class="item-des__price">89.000Đ</p>
+                            <form action="" class="item-des-number">
+                                <button class="item-des-number__btn">-</button>
+                                <button class="item-des-number__qtt">1</button>
+                                <button class="item-des-number__btn">+</button>
+                            </form>
+                         </div>
+                        <div class="cart-info__item-total">
+                            <i class="fas fa-times item-total__icon"></i>
+                             <p class = "item-total__price-all">89.000Đ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-info__item">
+                    <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-info__item-img">
+                    <div class="cart-info__item-wrap">
+                        <div class="cart-info__item-des">
+                            <h3 class="item-des__name">Bún bò kho</h3>
+                            <p class="item-des__price">79.000Đ</p>
+                            <form action="" class="item-des-number">
+                                <button class="item-des-number__btn">-</button>
+                                <button class="item-des-number__qtt">2</button>
+                                <button class="item-des-number__btn">+</button>
+                            </form>
+                         </div>
+                        <div class="cart-info__item-total">
+                            <i class="fas fa-times item-total__icon"></i>
+                             <p class = "item-total__price-all">158.000Đ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-info__item">
+                    <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-info__item-img">
+                    <div class="cart-info__item-wrap">
+                        <div class="cart-info__item-des">
+                            <h3 class="item-des__name">Bún bò kho</h3>
+                            <p class="item-des__price">79.000Đ</p>
+                            <form action="" class="item-des-number">
+                                <button class="item-des-number__btn">-</button>
+                                <button class="item-des-number__qtt">2</button>
+                                <button class="item-des-number__btn">+</button>
+                            </form>
+                         </div>
+                        <div class="cart-info__item-total">
+                            <i class="fas fa-times item-total__icon"></i>
+                             <p class = "item-total__price-all">158.000Đ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="cart-info__item">
+                    <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-info__item-img">
+                    <div class="cart-info__item-wrap">
+                        <div class="cart-info__item-des">
+                            <h3 class="item-des__name">Bún bò kho</h3>
+                            <p class="item-des__price">79.000Đ</p>
+                            <form action="" class="item-des-number">
+                                <button class="item-des-number__btn">-</button>
+                                <button class="item-des-number__qtt">2</button>
+                                <button class="item-des-number__btn">+</button>
+                            </form>
+                         </div>
+                        <div class="cart-info__item-total">
+                            <i class="fas fa-times item-total__icon"></i>
+                             <p class = "item-total__price-all">158.000Đ</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="grid payment">
+                <div class="grid__row">
+                    <div class="grid__column-7">
+                        <textarea class = "payment-note" type= "text" placeholder="Ghi chú"></textarea>
+                    </div>
+                    <div class="grid__column-3 box-payment">
+                        <span class="total-price">
+                            <p class="total-price__head">Tổng tiền: </p>
+                            316.000Đ
+                        </span>
+                        <div class="total-price__btn-box">
+                            <a href= "index.html" class="total-price__btn">Tiếp tục mua hàng</a>
+                            <a href= "cart_payment.html" class="total-price__btn">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-registration">
+            <h3 class="footer-registration__head">Thông tin mới</h3>
+            <p class="footer-registration__text">Đăng kí để nhận thông tin mới nhất từ Vietnamese Food</p>
+            <form action="" class = "footer-registration__form">
+                <input type="email" class="footer-registration__input" placeholder="Nhập email của bạn....">
+                <a class = "footer-registration__submit" href="#"><i class="far fa-paper-plane "></i></a>
+            </form>
+        </div>
+        <footer id = "footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <img class = "footer__img" src="./assets/img/logo4.png" alt="">
+                </div>
+                <div class="grid__row">
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Địa chỉ</h3>
+                        <p class="footer__info">CS1: Số 145, Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                        <p class="footer__info">CS2: Số 145, Lý Tự Trọng, Bến Nghé, quận 1,TP HCM</p>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Follow us</h3>
+                        <div class="footer__info-wrap">
+                            <a class="box-item">
+                                <i class="fab fa-facebook footer__info-social"></i>
+                            </a>
+                            <a class="box-item">
+                                <i class="fab fa-instagram footer__info-social"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Liên Hệ</h3>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-map-marker"></i>
+                            <p class="footer__info-wrap-address">20 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                        </div>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="footer__info-wrap-address">+ 84 34 659 6092</p>
+                        </div>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <p class="footer__info-wrap-address">vietnamesefood@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Giờ mở cửa</h3>
+                        <span class="footer__time">
+                            <p class="footer__info-wrap-day">Monday-Friday</p>
+                            8:00 AM-9:00 PM
+                        </span>
+                        <span class="footer__time">
+                            <p class="footer__info-wrap-day">Friday-Sunday</p>
+                            8:00 AM-11:00 PM
+                        </span>
+        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src= "./assets/js/main.js"></script>
+</body>
+</html>

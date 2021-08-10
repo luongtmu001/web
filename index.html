@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo3.png" type="image/gif" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nautilus-pompilius" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">                
+    <title>Vietnamese Food</title>
+</head>
+<body>
+    <div id="main">
+        <div class="header">
+            <header class="header-nav">
+                <div class="header-nav__head">
+                    <a href="" class="header-nav__item">
+                        <img src="./assets/img/logo4.png" alt="" class="header-nav__logo">
+                    </a>
+                </div>
+                <div class="header-nav__list">
+                    <a href="index.html" class="header-nav__item">Trang chủ</a>
+                    <a href="#" class="header-nav__item" id = "menu1">Ẩm thực Việt Nam
+                        <i class="fas fa-angle-down header-nav__item--noactive"></i>
+                        <!-- <i class="fas fa-angle-up header-nav__item--active"></i> -->
+                        <ul class="header-nav__menu-item">
+                            <li id = "NorthFoodLink" class = "menu-item_list">Ẩm thực miền Bắc</li>
+                            <li id = "CentralFoodLink" class = "menu-item_list">Ẩm thực miền Trung</li>
+                            <li id = "SouthFoodLink" class = "menu-item_list">Ẩm thực miền Nam</li>
+                            <li id = "MinorityFoodLink" class = "menu-item_list">Ẩm thực các dân tộc</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="header-nav__item">Thực đơn
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="header-nav__menu-item">
+                            <li id = "foodLink" class = "menu-item_list">Đồ ăn</li>
+                            <li id = "drinkLink" class = "menu-item_list">Đồ uống</li>
+                        </ul>
+                    </a>
+                    <a href="order.html" class="header-nav__item">Đặt bàn</a>
+                    <a href="#footer" class="header-nav__item">Liên hệ</a>
+                    <a href="cart.html" class="header-nav__item header-nav__cart">
+                        <div class="cart-list-quantity">
+                            <span class= "cart-list-quantity__current">3</span>
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                        <ul class="cart-list">
+                            <li class="cart-list__item">
+                                <img src="./assets/img/comrangnepcam.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm rang nếp cẩm</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">69.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/cơm-bò-nướng-sốt-tiêu.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm bò nướng sốt tiêu</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">89.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Bún bò kho</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">79.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">2</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button class ="cart-list__button">Xem tất cả</button>
+                        </ul>
+                    </a>
+                </div>
+            </header>
+            <div class="header-sticky">
+                <h3 class="header-sticky__head">Welcome to Vietnamese Food</h3>
+                <p>Món ngon Việt Nam, tinh hoa ẩm thực Việt</p> 
+                <a href = "#" class="header-sticky__button">
+                    Khám phá
+                    <i class="fas fa-angle-right header-sticky__button-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-introduce">
+                <div class="content-introduce-title">
+                    <span class="content-introduce-title__text">
+                        <h3 class ="content-introduce-title__head" >Món ăn truyền thống Việt Nam</h3>
+                        <p>Trong văn hóa Việt Nam, ăn uống là cả một nghệ thuật, nó không chỉ nhằm đáp ứng yêu cầu cơ bản của con người mà còn có mối quan hệ mật thiết đến lối sống, truyền thống dân tộc, được thể hiện rất rõ qua những dụng cụ được dùng trong bữa ăn, cách ứng xử với mọi người trong khi ăn. Vì thế việc ăn uống còn minh chứng cho lịch sử và sự hình thành nền văn hoá của Việt Nam. Các món ăn qua từng giai đoạn nói lên được cuộc sống, con người của giai đoạn đó và của vùng đất – nơi đã sản sinh ra mỗi món ăn.</p>
+                    </span>
+                    <img src="./assets/img/Vietnamese-food-2.jpg" alt="" class="content-introduce-title__img">
+                </div>
+                <div class="content-characteristics">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <div class="grid__column-3 characteristics">
+                                <div class="characteristics-point"></div>
+                                <h3 class="characteristics__title">Nguyên tắc phối hợp</h3>
+                                <p class = "characteristics__detail">Ẩm thực Việt Nam đặc trưng với sự trung dung trong cách pha trộn nguyên liệu không quá cay, quá ngọt hay quá béo. Các nguyên liệu phụ (gia vị) để chế biến món ăn Việt Nam vô cùng phong phú, bao gồm:</p>
+                                <ul>
+                                    <li>Nhiều loại rau thơm như húng thơm, tía tô, kinh giới, hành, thìa là, mùi tàu...</li>
+                                    <li>Gia vị thực vật như ớt, hạt tiêu, sả, hẹ, tỏi, gừng, chanh quả hoặc lá non...</li>
+                                    <li>Gia vị lên men như mẻ, mắm tôm, dấm bỗng, dấm thanh hoặc kẹo đắng, nước cốt dừa...</li>
+                                </ul>
+                            </div>
+                            <div class="grid__column-3 characteristics">
+                                <div class="characteristics-point"></div>
+                                <div class="characteristics-point"></div>
+                                <h3 class="characteristics__title">Triết lý chế biến</h3>
+
+                                <p class = "characteristics__detail"><strong><i>Âm dương phối triển</i></strong></p>
+                                <ul>
+                                    <li>Các gia vị đặc trưng của các dân tộc Đông Nam Á nhiệt đới nói trên được sử dụng một cách tương sinh hài hòa với nhau, như món ăn dễ gây lạnh bụng <strong><i>(tính hàn)</i></strong> buộc phải có gia vị cay nóng <strong><i>(tính nhiệt)</i></strong> đi kèm và ngược lại. Các nguyên liệu tính nóng <strong><i>(ấm)</i></strong> phải được nấu cùng nguyên liệu tính lạnh <strong><i>(mát)</i></strong> để tạo sự cân bằng cho món ăn.</li>
+                                    <li>Gia vị thực vật như ớt, hạt tiêu, sả, hẹ, tỏi, gừng, chanh quả hoặc lá non...</li>
+                                </ul>
+                                <p class = "characteristics__detail"><strong><i>Ngũ hành tương sinh</i></strong></p>
+                            </div>
+                            <div class="grid__column-3 characteristics">
+                                <div class="characteristics-point"></div>
+                                <div class="characteristics-point"></div>
+                                <div class="characteristics-point"></div>
+                                <h3 class="characteristics__title">Theo vùng miền, dân tộc</h3>
+                                <p class = "characteristics__detail">Tuy có những nét chung nói trên, ẩm thực Việt Nam có đặc điểm khác nhau theo từng vùng, mặc dù trong từng vùng này ẩm thực của các tiểu vùng cũng thể hiện nét đặc trưng</p>
+                                <ul>
+                                    <li>Ẩm thực miền Bắc</li>
+                                    <li>Ẩm thực miền Nam</li>
+                                    <li>Ẩm thực miền Trung</li>
+                                    <li>Ẩm thực các dân tộc</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content-special">
+                <h3 class="content-special__head">Đặc biệt Tuần</h3>
+                <div class="grid special-nemu">
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <div class="flip">
+                                <div class="special-menu-flip">
+                                    <div class="special-nemu__item">
+                                        <div class="special-nemu__first"></div>
+                                        <p class="special-nemu__name">Cơm rang nếp cẩm</p>
+                                        <p class="special-nemu__describe">Vị đượm nồng nếp cẩm quyện với cơm rang giòn tan, đánh thức mọi vị giác khi thưởng thức.</p>
+                                    </div>
+                                    <div class="special-nemu__item-back">
+                                        <button class = "item-back__button">
+                                            Xem thêm
+                                            <i class="fas fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="flip">
+                                <div class="special-menu-flip">
+                                    <div class="special-nemu__item">
+                                        <div class="special-nemu__second"></div> 
+                                        <p class="special-nemu__name">Cơm bò nướng sốt tiêu</p>
+                                        <p class="special-nemu__describe">Thịt bò mềm mại được phủ lên nước sốt tiêu cay nồng, thấm đều từng thớ thịt mang đến hương vị vô cùng hấp dẫn</p>
+                                    </div>
+                                    <div class="special-nemu__item-back">
+                                        <button class = "item-back__button">
+                                            Xem thêm
+                                            <i class="fas fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="flip">
+                                <div class="special-menu-flip">
+                                    <div class="special-nemu__item">
+                                        <div class="special-nemu__third"></div>
+                                        <p class="special-nemu__name">Pizza</p>
+                                        <p class="special-nemu__describe">Thịt bò mềm mại được phủ lên nước sốt tiêu cay nồng, thấm đều từng thớ thịt mang đến hương vị vô cùng hấp dẫn</p>
+                                    </div>
+                                    <div class="special-nemu__item-back">
+                                        <button class = "item-back__button">
+                                            Xem thêm
+                                            <i class="fas fa-angle-right"></i>
+                                        </button>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-transport">
+                <div class="content-transport__box">
+                    <div class="content-transport-item">
+                        <img src="./assets/img/step-1.jpg" alt="" class="content-transport-item__img">
+                        <h3 class="content-transport-item__text">Chọn món yêu thích</h3>
+                    </div>
+                    <div class="content-transport-item">
+                        <img src="./assets/img/step-2.jpg" alt="" class="content-transport-item__img">
+                        <h3 class="content-transport-item__text">Miễn phí vận chuyển</h3>
+                    </div>
+                    <div class="content-transport-item">
+                        <img src="./assets/img/step-3.jpg" alt="" class="content-transport-item__img">
+                        <h3 class="content-transport-item__text">Thanh toán dễ dàng</h3>
+                    </div>
+                    <div class="content-transport-item">
+                        <img src="./assets/img/step-4.jpg" alt="" class="content-transport-item__img">
+                        <h3 class="content-transport-item__text">Thưởng thức món ăn</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content-galary">
+                <h3 class = "content-galary__head">Our galary</h3>
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__column-7">
+                            <div class="box">
+                                <img class ="grid__img" src="./assets/img/galry/row-1.jpg" alt="Ảnh minh họa">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Thịt heo bọc xả chiên</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img class = "grid__img"src="./assets/img/galry/row-1.2.jpg" alt="Bánh mì">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Bánh mì</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row-2.jpg" alt="Bánh xèo" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Bánh xèo</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row-2.1.jpg" alt="Phở" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Bánh cuốn</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="Bún bò kho" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Bún bò kho</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img class ="grid__img" src="./assets/img/galry/row3.jpg" alt="Bánh ít trần tôm">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Bánh ít trần tôm</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-7">
+                            <div class="box">
+                                <img class = "grid__img"src="./assets/img/galry/row3.2.jpg" alt="Bánh mì">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Không biết món gì</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row4-xoilac.jpg" alt="Xôi lạc" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Xôi lạc</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row4.2-goibuoitomthit.jpg" alt="Gỏi bưởi tôm thịt" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Gỏi bưởi tôm thịt </p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-3">
+                            <div class="box">
+                                <img src="./assets/img/galry/row4.3-Mìquangga.jpg" alt="Mì quảng" class="grid__img">
+                                <div class="box-content">
+                                    <h3 class="box-content__title">Món ngon</h3>
+                                    <p class="box-content__name">Mì Quảng gà</p>
+                                    <a href="#" class="box-content__btn">Đặt ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-review">
+                <h3 class="content-review__head">Đánh giá của khách hàng</h3>
+                <div class="content-review__wrap">
+                    <div class="content-review-item">
+                        <img src="./assets/img/review/khabanh.jpg" alt="Ảnh đại diện" class="content-review-item__img">
+                        <h3 class="content-review-item__name">Khá Bảnh</h3>
+                        <div class="content-review-item__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="content-review-item__comment">
+                            *** Ảo thật đấy, từ bé đến giờ chưa gặp nhà hàng nào như này
+                        </p>
+                    </div>
+                    <div class="content-review-item">
+                        <img src="./assets/img/review/bacda.jpg" alt="Ảnh đại diện" class="content-review-item__img">
+                        <h3 class="content-review-item__name">Hữu Đa</h3>
+                        <div class="content-review-item__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="content-review-item__comment">
+                            Tôi năm nay hơn 70 tuổi mà tôi chưa gặp nhà hàng nào như này, đồ ăn thì ngon, trang trí thì đẹp, nhân viên thì thân thiện
+                        </p>
+                    </div>
+                    <div class="content-review-item">
+                        <img src="./assets/img/review/68559669_695786864198434_5620089582990131200_n.jpg" alt="Ảnh đại diện" class="content-review-item__img">
+                        <h3 class="content-review-item__name">Tuấn Lương</h3>
+                        <div class="content-review-item__star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="content-review-item__comment">
+                            Nhà hàng sạch sẽ, trang trí đẹp, nhân viên phục vụ thân thiện, nhiệt tình, đồ ăn ngon đúng hương vị Việt Nam
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-order">
+
+            </div>
+        </div>
+        <div class="footer-registration">
+            <h3 class="footer-registration__head">Thông tin mới</h3>
+            <p class="footer-registration__text">Đăng kí để nhận thông tin mới nhất từ Vietnamese Food</p>
+            <form action="" class = "footer-registration__form">
+                <input type="email" class="footer-registration__input" placeholder="Nhập email của bạn....">
+                <a class = "footer-registration__submit" href="#"><i class="far fa-paper-plane "></i></a>
+            </form>
+        </div>
+        <footer id = "footer">
+            <div class="grid">
+                <div class="grid__row">
+                    <img class = "footer__img" src="./assets/img/logo4.png" alt="">
+                </div>
+                <div class="grid__row">
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Địa chỉ</h3>
+                        <p class="footer__info">CS1: Số 145, Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                        <p class="footer__info">CS2: Số 145, Lý Tự Trọng, Bến Nghé, quận 1,TP HCM</p>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Follow us</h3>
+                        <div class="footer__info-wrap">
+                            <a class="box-item">
+                                <i class="fab fa-facebook footer__info-social"></i>
+                            </a>
+                            <a class="box-item">
+                                <i class="fab fa-instagram footer__info-social"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Liên Hệ</h3>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-map-marker"></i>
+                            <p class="footer__info-wrap-address">20 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                        </div>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-phone-alt"></i>
+                            <p class="footer__info-wrap-address">+ 84 34 659 6092</p>
+                        </div>
+                        <div class="footer__info-wrap">
+                            <i class="fas fa-envelope-open-text"></i>
+                            <p class="footer__info-wrap-address">vietnamesefood@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="grid__column-4">
+                        <h3 class="footer__head">Giờ mở cửa</h3>
+                        <span class="footer__time">
+                            <p class="footer__info-wrap-day">Monday-Friday</p>
+                            8:00 AM-9:00 PM
+                        </span>
+                        <span class="footer__time">
+                            <p class="footer__info-wrap-day">Friday-Sunday</p>
+                            8:00 AM-11:00 PM
+                        </span>
+        
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src= "./assets/js/main.js"></script>
+</body>
+</html>
