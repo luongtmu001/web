@@ -11,12 +11,13 @@
     <link href="http://fonts.cdnfonts.com/css/nautilus-pompilius" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">                
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/foodDrink.css">             
     <title>Vietnamese Food</title>
 </head>
 <body>
     <main>
-        <div class="header2">
+        <section class="header2">
             <header class="header-nav2">
                 <div class="header-nav__head">
                     <a href="" class="header-nav__item header__cart header-fix">
@@ -29,21 +30,21 @@
                         <i class="fas fa-angle-down"></i>
                         <!-- <i class="fas fa-angle-up "></i> -->
                         <ul class="header-nav__menu-item">
-                            <li class = "menu-item_list">Ẩm thực miền Bắc</li>
-                            <li class = "menu-item_list">Ẩm thực miền Trung</li>
-                            <li class = "menu-item_list">Ẩm thực miền Nam</li>
-                            <li class = "menu-item_list">Ẩm thực các dân tộc</li>
+                            <li id = "NorthFoodLink" class = "menu-item_list">Ẩm thực miền Bắc</li>
+                            <li id = "CentralFoodLink" class = "menu-item_list">Ẩm thực miền Trung</li>
+                            <li id = "SouthFoodLink" class = "menu-item_list">Ẩm thực miền Nam</li>
+                            <li id = "MinorityFoodLink" class = "menu-item_list">Ẩm thực các dân tộc</li>
                         </ul>
                     </a>
                     <a href="#" class="header-nav__item header__cart">Thực đơn
                         <i class="fas fa-angle-down"></i>
                         <ul class="header-nav__menu-item">
-                            <li class = "menu-item_list">Đồ ăn</li>
-                            <li class = "menu-item_list">Đồ uống</li>
+                            <li id = "foodLink" class = "menu-item_list">Đồ ăn</li>
+                            <li id = "drinkLink" class = "menu-item_list">Đồ uống</li>
                         </ul>
                     </a>
-                    <a href="#" class="header-nav__item header__cart">Đặt bàn</a>
-                    <a href="#" class="header-nav__item header__cart">Liên hệ</a>
+                    <a href="order.html" class="header-nav__item header__cart">Đặt bàn</a>
+                    <a href="#footer" class="header-nav__item header__cart">Liên hệ</a>
                     <a href="cart.html" class="header-nav__item header__cart header-nav__cart">
                         <div class="cart-list-quantity">
                             <span class= "cart-list-quantity__current">3</span>
@@ -98,7 +99,196 @@
                     </a>
                 </div>
             </header>
-        </div>
-
+            <section class="content">
+                <div class="grid">
+                    <div class="grid__row product--search">
+                        <input type="text" placeholder="Tìm kiếm sản phẩm" class ="product--search__input">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="grid__row">
+                        <div class="slider">
+                            <a href="drinkmenu.html" class="slider__btn">Tât cả</a>
+                            <a href="foodmenu.html" class="slider__btn">Món ăn</a>
+                            <a href="drinkmenu.html#hoaqua" class="slider__btn">Nước hoa quả</a>
+                            <a href="#dongchai" class="slider__btn">Nước uống đóng chai</a>
+                            <a href="#cafe" class="slider__btn">Cafe</a>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/banh-mi.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh mì pate</h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <span><p class="home-product-wrap__price">20.000Đ</p>/đĩa</span>
+                                    <a href="#" class="home-product-wrap__button">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/banh-cuon.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh cuốn</h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <p class="home-product-wrap__price">39.000Đ</p>
+                                    <a href="#" class="home-product-wrap__button">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/banh-xeo.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh xèo </h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <p class="home-product-wrap__price">30.000Đ</p>
+                                    <a href="#" class="home-product-wrap__button">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/banh-it.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh ít</h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <p class="home-product-wrap__price">39.000Đ</p>
+                                    <a href="#" class="home-product-wrap__button">Thêm vào giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/bánh-bột-lọc-45k.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh bột lọc</h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <span><p class="home-product-wrap__price">45.000Đ</p>/đĩa</span>
+                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <div href="" class="home-product__item">
+                                <div class="home-product__img" style = "background-image: url(./assets/img/food/bánh-khọt-Vũng-Tàu.jpg);"></div>
+                                <div class="home-product__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <h3 class="home-product__heading">Bánh khọt Vũng Tàu</h3>
+                                <p class="home-product__detail">Nước dừa đã trở thành một loại nước giải khát phổ biến ở Việt Nam trong nhiều thế kỷ</p>
+                                <div class="home-product-wrap">
+                                    <span><p class="home-product-wrap__price">40.000Đ</p>/đĩa</span>
+                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id ="footer">
+                <div class="footer-registration">
+                    <h3 class="footer-registration__head">Thông tin mới</h3>
+                    <p class="footer-registration__text">Đăng kí để nhận thông tin mới nhất từ Vietnamese Food</p>
+                    <form action="" class = "footer-registration__form">
+                        <input type="email" class="footer-registration__input" placeholder="Nhập email của bạn....">
+                        <a class = "footer-registration__submit" href="#"><i class="far fa-paper-plane "></i></a>
+                    </form>
+                </div>
+                <footer id = "footer">
+                    <div class="grid">
+                        <div class="grid__row">
+                            <img class = "footer__img" src="./assets/img/logo4.png" alt="">
+                        </div>
+                        <div class="grid__row">
+                            <div class="grid__column-4">
+                                <h3 class="footer__head">Địa chỉ</h3>
+                                <p class="footer__info">CS1: Số 145, Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                                <p class="footer__info">CS2: Số 145, Lý Tự Trọng, Bến Nghé, quận 1,TP HCM</p>
+                            </div>
+                            <div class="grid__column-4">
+                                <h3 class="footer__head">Follow us</h3>
+                                <div class="footer__info-wrap">
+                                    <a class="box-item">
+                                        <i class="fab fa-facebook footer__info-social"></i>
+                                    </a>
+                                    <a class="box-item">
+                                        <i class="fab fa-instagram footer__info-social"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid__column-4">
+                                <h3 class="footer__head">Liên Hệ</h3>
+                                <div class="footer__info-wrap">
+                                    <i class="fas fa-map-marker"></i>
+                                    <p class="footer__info-wrap-address">20 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                                </div>
+                                <div class="footer__info-wrap">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <p class="footer__info-wrap-address">+ 84 34 659 6092</p>
+                                </div>
+                                <div class="footer__info-wrap">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    <p class="footer__info-wrap-address">vietnamesefood@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="grid__column-4">
+                                <h3 class="footer__head">Giờ mở cửa</h3>
+                                <span class="footer__time">
+                                    <p class="footer__info-wrap-day">Monday-Friday</p>
+                                    8:00 AM-9:00 PM
+                                </span>
+                                <span class="footer__time">
+                                    <p class="footer__info-wrap-day">Friday-Sunday</p>
+                                    8:00 AM-11:00 PM
+                                </span>
+                
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </section>
+    </main>
+    <script src= "./assets/js/main.js"></script>
 </body>
 </html>
