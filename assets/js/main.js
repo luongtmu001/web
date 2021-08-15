@@ -5,10 +5,10 @@ window.addEventListener("scroll", function(){
 });
 // Đến trang mới khi click
 document.getElementById("foodLink").onclick = function () {
-    location.href = "foodmenu.html";
+    location.href = "Food.html";
 };
 document.getElementById("drinkLink").onclick = function () {
-    location.href = "drinkmenu.html";
+    location.href = "Drink.html";
 };
 document.getElementById("NorthFoodLink").onclick = function () {
     location.href = "NorthFood.html";
@@ -22,3 +22,19 @@ document.getElementById("SouthFoodLink").onclick = function () {
 document.getElementById("MinorityFoodLink").onclick = function () {
     location.href = "MinorityFood.html";
 };
+document.getElementById("login").onclick = function () {
+    location.href = "login.html";
+};
+// Loc sx khi click
+function changeProductList(type, element) {
+    var tabs = document.getElementsByClassName('slider__btn');
+    for (i = 0 ; i < tabs.length ; i++) {
+        tabs[i].style.background = '#ddd';
+    }
+    element.style.background = '#ff3838';
+    switch (type) {
+        case 'hoaqua' :
+            document.getElementById('hoaqua').style.display = 'block';
+            break;
+    }
+}

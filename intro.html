@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo3.png" type="image/gif" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nautilus-pompilius" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">          
+    <title>Vietnamese Food</title>
+</head>
+<body>
+    <main>
+        <section class="header2">
+            <header class="header-nav2">
+                <div class="header-nav__head">
+                    <a href="" class="header-nav__item header__cart header-fix">
+                        <img src="./assets/img/logo4.png" alt="" class="header-nav__logo">
+                    </a>
+                </div>
+                <div class="header-nav__list">
+                    <a href="index.html" class="header-nav__item header__cart">Trang chủ</a>
+                    <a href="#" class="header-nav__item header__cart" id = "menu1">Ẩm thực Việt Nam
+                        <i class="fas fa-angle-down"></i>
+                        <!-- <i class="fas fa-angle-up "></i> -->
+                        <ul class="header-nav__menu-item">
+                            <li id = "NorthFoodLink" class = "menu-item_list">Ẩm thực miền Bắc</li>
+                            <li id = "CentralFoodLink" class = "menu-item_list">Ẩm thực miền Trung</li>
+                            <li id = "SouthFoodLink" class = "menu-item_list">Ẩm thực miền Nam</li>
+                            <li id = "MinorityFoodLink" class = "menu-item_list">Ẩm thực các dân tộc</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="header-nav__item header__cart">Thực đơn
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="header-nav__menu-item">
+                            <li id = "foodLink" class = "menu-item_list">Đồ ăn</li>
+                            <li id = "drinkLink" class = "menu-item_list">Đồ uống</li>
+                        </ul>
+                    </a>
+                    <a href="order.html" class="header-nav__item header__cart">Đặt bàn</a>
+                    <a href="#footer" class="header-nav__item header__cart">Liên hệ</a>
+                    <a href="cart.html" class="header-nav__item header__cart header-nav__cart">
+                        <div class="cart-list-quantity">
+                            <span class= "cart-list-quantity__current">3</span>
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                        <ul class="cart-list">
+                            <li class="cart-list__item">
+                                <img src="./assets/img/comrangnepcam.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm rang nếp cẩm</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">69.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/cơm-bò-nướng-sốt-tiêu.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm bò nướng sốt tiêu</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">89.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Bún bò kho</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">79.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">2</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button class ="cart-list__button">Xem tất cả</button>
+                        </ul>
+                    </a>
+                </div>
+            </header>
+        </section>
+        <section class="content-banner">
+            <div class="content-banner__wrap">
+                <h3 class="content-banner__head">Nét đặc trưng của ẩm thực 3 miền Bắc - Trung - Nam</h3>
+                <div class="content-banner-link">
+                    <p>Trang chủ</p>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Ẩm thực Việt Nam</p>
+                </div>
+            </div>
+        </section>
+        <section class="content-intro">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="content-wrap">
+                        <p class="content__desc">Việt Nam là một nước thiên về nông nghiệp thuộc đới khí hậu nhiệt đới, vùng nhiệt đới gió mùa. Ngoài ra, lãnh thổ Việt Nam được chia ra ba miền rõ rệt là Bắc, Trung, Nam. Chính các đặc điểm về địa lý, văn hóa, dân tộc, khí hậu đã quy định những đặc điểm riêng của ẩm thực từng vùng – miền. Mỗi miền có một nét, khẩu vị cách chế biến đặc trưng. Điều đó góp phần làm ẩm thực Việt Nam phong phú, đa dạng</p>
+                        <div class="content-area" id="mienBac">
+                            <h3 class="content-area__head">Miền Bắc - vị đậm đà mà bình dị</h3>
+                            <p class="content-area__more">
+                                Là vùng đất có nền lịch sử lâu đời nhất Việt Nam, ẩm thực miền Bắc đặc trưng với khẩu vị mặn mà, đậm đà, thường không đậm các vị cay, béo, ngọt bằng các vùng khác, chủ yếu sử dụng nước mắm loãng, mắm tôm. Sử dụng nhiều món rau và các loại thủy sản nước ngọt dễ kiếm như tôm, cua, cá, trai, hến... và nhìn chung, do truyền thống xa xưa có nền nông nghiệp nghèo nàn, ẩm thực miền Bắc trước kia ít thịnh hành các món ăn với nguyên liệu chính là thịt, cá. Nhiều người đánh giá cao ẩm thực Hà Nội một thời, cho rằng nó đại diện tiêu biểu nhất của tinh hoa ẩm thực miền Bắc Việt Nam với những món phở, bún thang, bún chả, các món quà như cốm Vòng, bánh cuốn Thanh Trì... và gia vị đặc sắc như tinh dầu cà cuống, rau húng Láng.
+                            </p>
+                            <div class="grid__row content-area__wrap-img">
+                                <div class="grid__column-3">
+                                    <img src="./assets/img/pho.jpg" alt="" class = "content-area__img">
+                                </div>
+                                <div class="grid__column-7">
+                                    <img src="./assets/img/banhcuon.jpg" alt="" class = "content-area__img">
+                                </div>
+                            </div>
+                            <p class="content-area__mota">Bánh cuốn và bún </p>
+                
+                        </div>
+                        <div class="content-area" id="mienTrung">
+                            <h3 class="content-area__head">Miền Trung - vị cay, đơn giản mà tinh tế</h3>
+                            <p class="content-area__more">
+                                Miên Trung là vùng đất nắng gió, không được thiên nhiên ưu ái nhưng văn hóa ẩm thực miền Trung lại rất tuyệt diệu.  Ẩm thực nơi đây tương đối cầu kì, chú trọng từ hình thức, cách trình bày cho đến tên gọi món ăn, đơn cử như Huế – nơi được xem là cái nôi của ẩm thực miền Trung. Điểm chung của các món ăn miền Trung là vị cay và hơi mặn hơn so với miền Bắc và miền Nam.  Các món đặc trưng của người miền Trung có thể kể đến như Cao lầu, cơm hến, bún bò Huế, bánh bèo, bánh bột lọc, bánh xèo, bánh đập, chả ram,...Các tỉnh thành miền Trung như Huế, Đà Nẵng, Bình Định rất nổi tiếng với mắm tôm chua và các loại mắm ruốc. Đặc biệt, ẩm thực Huế do ảnh hưởng từ phong cách ẩm thực hoàng gia, cho nên rất cầu kỳ trong chế biến và trình bày. Một mặt khác, do địa phương không có nhiều sản vật mà ẩm thực hoàng gia lại đòi hỏi số lượng lớn món, nên mỗi loại nguyên liệu đều được chế biến rất đa dạng với trong nhiều món khác nhau.
+                            </p>
+                            <div class="grid__row content-area__wrap-img">
+                                <div class="grid__column-7">
+                                    <img src="./assets/img/banh-xeo.jpg" alt="" class = "content-area__img">
+                                </div>
+                                <div class="grid__column-3">
+                                    <img src="./assets/img/cao-lau.jpg" alt="" class = "content-area__img">
+                                </div>
+                                
+                            </div>
+                            <p class="content-area__mota">Bánh xào và cao lầu </p>
+                
+                        </div>
+                        <div class="content-area" id=mienNam>
+                            <h3 class="content-area__head">Miền Nam - vị ngọt mang phong cách đa dạng</h3>
+                            <p class="content-area__more">
+                                Ẩm thực miền Nam, có thiên hướng hảo vị chua ngọt, đây là nơi chịu ảnh hưởng nhiều của ẩm thực Trung Quốc, Campuchia, Thái Lan, có đặc điểm là thường cho thêm đường và hay sử dụng sữa dừa (nước cốt và nước dão của dừa). Chỉ cần những nguyên liệu đơn sơ, bình dị là có thể tạo nên một phong thái riêng cho các món ăn của vùng đất này. Gỏi cuốn, bún mắm, hủ tiếu Nam Vang, bánh ít, bánh bò, chè chuối,… là các món ăn nổi tiếng nhất trong nét ẩm thực miền Nam. Nền ẩm thực này cũng sản sinh ra vô số loại mắm khô (như mắm cá sặc, mắm bò hóc, mắm ba khía...). Ẩm thực miền Nam cũng dùng nhiều đồ hải sản nước mặn và nước lợ hơn miền Bắc (các loại cá, tôm, cua, ốc biển), và rất đặc biệt với những món ăn dân dã, đặc thù của một thời đi mở cõi, hiện nay nhiều khi đã trở thành đặc sản: chuột đồng khìa nước dừa, dơi quạ hấp chao, rắn hổ đất nấu cháo đậu xanh, đuông dừa, đuông đất hoặc đuông chà là, vọp chong, cá lóc nướng trui...
+                            </p>
+                            <div class="grid__row content-area__wrap-img">
+                                <div class="grid__column-3">
+                                    <img src="./assets/img/bun-mam.jpg" alt="" class = "content-area__img">
+                                </div>
+                                <div class="grid__column-7">
+                                    <img src="./assets/img/mon-hu-tieu-nam-vang.jpg" alt="" class = "content-area__img">
+                                </div>
+                            </div>
+                            <p class="content-area__mota">Bánh mắm và hủ tiếu Nam Vang</p>
+                
+                        </div>
+                        <div class="content-area" id=danToc>
+                            <h3 class="content-area__head">Ẩm thực các dân tộc</h3>
+                            <p class="content-area__more">
+                                Với 54 dân tộc sống trên nhiều vùng địa lý đa dạng khắp toàn quốc, ẩm thực của mỗi dân tộc trong cộng đồng các dân tộc Việt Nam đều có bản sắc riêng biệt. Rất nhiều món trong số đó ít được biết đến tại các dân tộc khác, như các món thịt lợn sống trộn phèo non của các dân tộc Tây Nguyên. Tuy nhiên, nhiều món ăn đã trở thành đặc sản trên đất nước Việt Nam và được nhiều người biết đến, như mắm bò hóc miền Nam, bánh cuốn trứng (Cao Bằng, Lạng Sơn), bánh coóng phù (bánh trôi dân tộc Tày, xuất xứ từ bánh trôi tàu của người Hoa), lợn sữa và vịt quay mắc mật (quả mặt), khâu nhục Lạng Sơn (ảnh hưởng từ Quảng Đông, Trung Quốc), phở chua, cháo nhộng ong, phở cốn sủi, thắng cố, các món xôi nếp nương của người Mường, thịt chua Thanh Sơn (Phú Thọ)...
+                            </p>
+                            <div class="grid__row content-area__wrap-img">
+                                <div class="grid__column-7">
+                                    <img src="./assets/img/khau-nhuc.png" alt="" class = "content-area__img">
+                                </div>
+                                <div class="grid__column-3">
+                                    <img src="./assets/img/thitchua.png" alt="" class = "content-area__img">
+                                </div>
+                                
+                            </div>
+                            <p class="content-area__mota">Khâu mục Lạng Sơn và thịt chua Thanh Sơn</p>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id ="footer">
+            <div class="footer-registration">
+                <h3 class="footer-registration__head">Thông tin mới</h3>
+                <p class="footer-registration__text">Đăng kí để nhận thông tin mới nhất từ Vietnamese Food</p>
+                <form action="" class = "footer-registration__form">
+                    <input type="email" class="footer-registration__input" placeholder="Nhập email của bạn....">
+                    <a class = "footer-registration__submit" href="#"><i class="far fa-paper-plane "></i></a>
+                </form>
+            </div>
+            <footer id = "footer">
+                <div class="grid">
+                    <div class="grid__row">
+                        <img class = "footer__img" src="./assets/img/logo4.png" alt="">
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Địa chỉ</h3>
+                            <p class="footer__info">CS1: Số 145, Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                            <p class="footer__info">CS2: Số 145, Lý Tự Trọng, Bến Nghé, quận 1,TP HCM</p>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Follow us</h3>
+                            <div class="footer__info-wrap">
+                                <a class="box-item">
+                                    <i class="fab fa-facebook footer__info-social"></i>
+                                </a>
+                                <a class="box-item">
+                                    <i class="fab fa-instagram footer__info-social"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Liên Hệ</h3>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-map-marker"></i>
+                                <p class="footer__info-wrap-address">20 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                            </div>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="footer__info-wrap-address">+ 84 34 659 6092</p>
+                            </div>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <p class="footer__info-wrap-address">vietnamesefood@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Giờ mở cửa</h3>
+                            <span class="footer__time">
+                                <p class="footer__info-wrap-day">Monday-Friday</p>
+                                8:00 AM-9:00 PM
+                            </span>
+                            <span class="footer__time">
+                                <p class="footer__info-wrap-day">Friday-Sunday</p>
+                                8:00 AM-11:00 PM
+                            </span>
+            
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="./assets/js/test.js"></script>
+</body>
+</html>

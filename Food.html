@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo3.png" type="image/gif" sizes="64x64">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/nautilus-pompilius" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">   
+    <link rel="stylesheet" href="./assets/css/Drink.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">          
+    <title>Vietnamese Food</title>
+</head>
+<body>
+    <main>
+        <section class="header2">
+            <header class="header-nav2">
+                <div class="header-nav__head">
+                    <a href="" class="header-nav__item header__cart header-fix">
+                        <img src="./assets/img/logo4.png" alt="" class="header-nav__logo">
+                    </a>
+                </div>
+                <div class="header-nav__list">
+                    <a href="index.html" class="header-nav__item header__cart">Trang chủ</a>
+                    <a href="intro.html" class="header-nav__item header__cart" id = "menu1">Ẩm thực Việt Nam
+                        <i class="fas fa-angle-down"></i>
+                        <!-- <i class="fas fa-angle-up "></i> -->
+                        <ul class="header-nav__menu-item">
+                            <li id = "NorthFoodLink" class = "menu-item_list">Ẩm thực miền Bắc</li>
+                            <li id = "CentralFoodLink" class = "menu-item_list">Ẩm thực miền Trung</li>
+                            <li id = "SouthFoodLink" class = "menu-item_list">Ẩm thực miền Nam</li>
+                            <li id = "MinorityFoodLink" class = "menu-item_list">Ẩm thực các dân tộc</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="header-nav__item header__cart">Thực đơn
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="header-nav__menu-item">
+                            <li id = "foodLink" class = "menu-item_list">Đồ ăn</li>
+                            <li id = "drinkLink" class = "menu-item_list">Đồ uống</li>
+                        </ul>
+                    </a>
+                    <a href="order.html" class="header-nav__item header__cart">Đặt bàn</a>
+                    <a href="#footer" class="header-nav__item header__cart">Liên hệ</a>
+                    <a href="cart.html" class="header-nav__item header__cart header-nav__cart">
+                        <div class="cart-list-quantity">
+                            <span class= "cart-list-quantity__current">3</span>
+                        </div>
+                        <i class="fas fa-shopping-cart"></i>
+                        <ul class="cart-list">
+                            <li class="cart-list__item">
+                                <img src="./assets/img/comrangnepcam.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm rang nếp cẩm</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">69.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/cơm-bò-nướng-sốt-tiêu.jpg" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Cơm bò nướng sốt tiêu</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">89.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">1</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="cart-list__item">
+                                <img src="./assets/img/galry/row-2.2-bunbokho.png" alt="" class="cart-list__img">
+                                <div class="cart-list__item-info">
+                                    <h3 class="item-info__head">Bún bò kho</h3>
+                                    <div class="item-info__wrap">
+                                        <span class = "item-info__price">79.000Đ</span>
+                                        <div class="item-info__qtt-wrap">
+                                            <span class = "item-info__sub">-</span>
+                                            <span class = "item-info__numer">2</span>
+                                            <span class = "item-info__add">+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <button class ="cart-list__button">Xem tất cả</button>
+                        </ul>
+                    </a>
+                </div>
+            </header>
+        </section>
+        <section class="banner">
+            <div class="banner-wrap">
+                <h3 class="banner__name">Đồ ăn</h3>
+                <div class="banner-link">
+                    <p>Trang chủ</p>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Thực đơn</p>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>Đồ ăn</p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <div class="category">
+                            <h3 class="category__heading">
+                                <i class="fas fa-bars"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                                <li  onclick="changeProductList('tatca',this)" class="category-list__item">Tất cả</li>
+                                <li  onclick="changeProductList('hoaqua',this)" class="category-list__item">
+                                    <i class="fas fa-lemon"></i>
+                                    Bánh mì</li>
+                                <li  onclick="changeProductList('dongchai',this)" class="category-list__item">
+                                    <i class="fas fa-wine-bottle"></i>
+                                    Đồ uống đóng chai</li>
+                                <li  onclick="changeProductList('cafe',this)" class="category-list__item">
+                                    <i class="fas fa-coffee"></i>
+                                    Cafe
+                                </li>
+                            </ul>
+                            <h3 class="category__heading">
+                                <i class="fas fa-bars"></i>
+                                Đánh Giá
+                            </h3>
+                            <ul class="category-list">
+                                <div class="category__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>trở lên</span>
+                                </div>
+                                <div class="category__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>trở lên</span>
+                                </div>
+                                <div class="category__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>trở lên</span>
+                                </div>
+                                <div class="category__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>trở lên</span>
+                                </div>
+                                <div class="category__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>trở lên</span>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <form action="" class="home-filter__search-wrap">
+                                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                                    <button><i class="fas fa-search"></i></button>
+                            </form>
+                            <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="select-input__icon fas fa-angle-down"></i>
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá thấp đến cao</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Giá cao đến thấp</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <section id = "tatca">
+                                <div class="grid__row">
+                                    <div class="grid__column-2-4" name ="hoaqua">
+                                            <div href="" class="home-product__item">
+                                                <div class="home-product__img" style = "background-image: url(./assets/img/drink/nuoc-dua.jpg);"></div>
+                                                <div class="home-product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h3 class="home-product__heading">Nước dừa</h3>
+                                                <p class="home-product__detail">Nước hoa quả</p>
+                                                <div class="home-product-wrap">
+                                                    <p class="home-product-wrap__price">30.000Đ</p>
+                                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name ="hoaqua">
+                                            <div href="" class="home-product__item">
+                                                <div class="home-product__img" style = "background-image: url(./assets/img/drink/nuoc-ep-khe-39k.jpg);"></div>
+                                                <div class="home-product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h3 class="home-product__heading">Nước ép khế</h3>
+                                                <p class="home-product__detail">Phân loại: Nước hoa quả</p>
+                                                <div class="home-product-wrap">
+                                                    <p class="home-product-wrap__price">39.000Đ</p>
+                                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name ="hoaqua">
+                                            <div href="" class="home-product__item">
+                                                <div class="home-product__img" style = "background-image: url(./assets/img/drink/nuoc-ep-oi-35k.jpg);"></div>
+                                                <div class="home-product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h3 class="home-product__heading">Nước ép ổi</h3>
+                                                <p class="home-product__detail">Phân loại: Nước hoa quả</p>
+                                                <div class="home-product-wrap">
+                                                    <p class="home-product-wrap__price">35.000Đ</p>
+                                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name ="hoaqua">
+                                            <div href="" class="home-product__item">
+                                                <div class="home-product__img" style = "background-image: url(./assets/img/drink/tra-sua-xa-39k.jpg);"></div>
+                                                <div class="home-product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <h3 class="home-product__heading">Trà sữa xả</h3>
+                                                <p class="home-product__detail">Phân loại: Nước hoa quả</p>
+                                                <div class="home-product-wrap">
+                                                    <p class="home-product-wrap__price">39.000Đ</p>
+                                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name ="hoaqua">
+                                            <div href="" class="home-product__item">
+                                                <div class="home-product__img" style = "background-image: url(./assets/img/drink/nuoccam-35k.jpg);"></div>
+                                                <div class="home-product__rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <h3 class="home-product__heading">Nước cam</h3>
+                                                <p class="home-product__detail">Phân loại: Nước hoa quả</p>
+                                                <div class="home-product-wrap">
+                                                    <p class="home-product-wrap__price">35.000Đ</p>
+                                                    <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/cocacola.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">CocaCola lon 320ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước giải khát, đồ uống có ga</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">10.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/c.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">CocaCola lon light 320ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước giải khát, đồ uống có ga</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">12.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/sprite.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Sprite Lon 320ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước giải khát, đồ uống có ga</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">10.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/fanta.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Fanta lon 320ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước giải khát, đồ uống có ga</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">10.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/La-Vie-9k.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Nước Lavie 700ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước khoáng</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">9.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Douongdongchai/dasani-350.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Nước Dasani 350ml</h3>
+                                            <p class="home-product__detail">Phân loại: Nước khoáng</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">8.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/bia-budweiser-330ml.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Budweiser 330ml</h3>
+                                            <p class="home-product__detail">Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">29.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/bia-heineken-sleek-330ml.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Heibeken Lon 330ml</h3>
+                                            <p class="home-product__detail">Phân loại:Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">25.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/biahanoi-lon.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Hà Nội Lon 330ml</h3>
+                                            <p class="home-product__detail">Phân loại:Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">11.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/biahanoi-chai.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Hà Nội chai</h3>
+                                            <p class="home-product__detail">Phân loại: Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">23.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/bia-sai-gon-export-330ml.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Saigon lon 330ml</h3>
+                                            <p class="home-product__detail">Phân loại: Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">10.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "dongchai">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Beer/saigonxanh-330.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bia Saigon Special</h3>
+                                            <p class="home-product__detail">Phân loại: Đồ uống có cồn</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">13.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "cafe">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Cafe/cafe.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Cafe Sữa</h3>
+                                            <p class="home-product__detail">Phân loại: Cafe (Nóng, Đá)</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">26.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "cafe">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Cafe/cafedenda.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Cafe Đen</h3>
+                                            <p class="home-product__detail">Phân loại: Cafe (Nóng, Đá)</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">24.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "cafe">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Cafe/cafebacsuu.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Bạc sửu</h3>
+                                            <p class="home-product__detail">Phân loại: Cafe (Nóng, Đá)</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">30.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid__column-2-4" name = "cafe">
+                                        <div href="" class="home-product__item">
+                                            <div class="home-product__img" style = "background-image: url(./assets/img/drink/Cafe/cafe-trung-ha-noi.jpg);"></div>
+                                            <div class="home-product__rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <h3 class="home-product__heading">Cafe trứng</h3>
+                                            <p class="home-product__detail">Phân loại: Cafe</p>
+                                            <div class="home-product-wrap">
+                                                <p class="home-product-wrap__price">59.000Đ</p>
+                                                <a href="#" class="home-product-wrap__button"><i class="fas fa-cart-plus"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id ="footer">
+            <div class="footer-registration">
+                <h3 class="footer-registration__head">Thông tin mới</h3>
+                <p class="footer-registration__text">Đăng kí để nhận thông tin mới nhất từ Vietnamese Food</p>
+                <form action="" class = "footer-registration__form">
+                    <input type="email" class="footer-registration__input" placeholder="Nhập email của bạn....">
+                    <a class = "footer-registration__submit" href="#"><i class="far fa-paper-plane "></i></a>
+                </form>
+            </div>
+            <footer id = "footer">
+                <div class="grid">
+                    <div class="grid__row">
+                        <img class = "footer__img" src="./assets/img/logo4.png" alt="">
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Địa chỉ</h3>
+                            <p class="footer__info">CS1: Số 145, Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                            <p class="footer__info">CS2: Số 145, Lý Tự Trọng, Bến Nghé, quận 1,TP HCM</p>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Follow us</h3>
+                            <div class="footer__info-wrap">
+                                <a class="box-item">
+                                    <i class="fab fa-facebook footer__info-social"></i>
+                                </a>
+                                <a class="box-item">
+                                    <i class="fab fa-instagram footer__info-social"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Liên Hệ</h3>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-map-marker"></i>
+                                <p class="footer__info-wrap-address">20 Hồ Tùng Mậu, Cầu Giấy, Hà Nội</p>
+                            </div>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="footer__info-wrap-address">+ 84 34 659 6092</p>
+                            </div>
+                            <div class="footer__info-wrap">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <p class="footer__info-wrap-address">vietnamesefood@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="grid__column-4">
+                            <h3 class="footer__head">Giờ mở cửa</h3>
+                            <span class="footer__time">
+                                <p class="footer__info-wrap-day">Monday-Friday</p>
+                                8:00 AM-9:00 PM
+                            </span>
+                            <span class="footer__time">
+                                <p class="footer__info-wrap-day">Friday-Sunday</p>
+                                8:00 AM-11:00 PM
+                            </span>
+            
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </main>
+    <script src="./assets/js/test.js"></script>
+</body>
+</html>

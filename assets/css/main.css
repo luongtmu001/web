@@ -57,6 +57,11 @@
     box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.3);
     padding: 0;
 }
+.header-nav__list {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
 .header-nav__item {
     position: relative;
     line-height: 8rem;
@@ -69,7 +74,8 @@
 .header__cart.header-nav__item {
     color: var(--text-color);
 }
-.header-nav--scrool .header-nav__item  {
+.header-nav--scrool .header-nav__item,
+.header-nav--scrool .header-nav__acount-login  {
     color: var(--text-color);
     position: relative;
 }
@@ -78,7 +84,7 @@
 }
 .header-nav__item::after {
     position: absolute;
-    top: 5px;
+    top: 35px;
     left: 0;
     content: "";
     width: 100%;
@@ -99,7 +105,7 @@
 .header-nav__item:hover i {
     transform:rotate(180deg)
 }
-.header-nav__item:hover:last-child i{
+.header-nav__item:hover:nth-child(6) i{
     transform: unset;
 }
 /* .header-nav__item::after {
@@ -132,7 +138,7 @@
 .header-nav__menu-item {
     display: none;
     position: absolute;
-    top: 52px;
+    top: 80px;
     left: 0;
     min-width: 180px;
     background-color: var(--white-color);
@@ -142,10 +148,36 @@
     transform-origin: top center;
     box-shadow: 0 .1rem .5rem rgba(51, 51, 51, 0.5);
 }
+.header-nav__wrap-acount {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.header-nav__acount-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color:#969696;
+    border-radius: 50%;
+}
+.header-nav__acount-icon {
+    color: var(--white-color);
+    position: absolute;
+    right: 0;
+    left: 7px;
+    top: 4px;
+    bottom: 0;
+}
+.header-nav__acount-login {
+    margin-left:5px;
+    color: var(--white-color);
+}
 .cart-list-quantity {
     position: absolute;
-    top: -10px;
-    right: -15px;
+    top: 17px;
+    right: -14px;
     width: 20px;
     height: 20px;
     background-color: rgb(214, 213, 213);
@@ -167,7 +199,7 @@
 .cart-list {
     display: none;
     position:absolute;
-    top:45px;
+    top:70px;
     right: -75%;
     width: 350px;
     background-color: var(--white-color);
@@ -191,7 +223,10 @@
 .cart-list__item {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    padding: 2px 0;
+}
+.cart-list__item:hover {
+    background-color:#f1f1f1;;
 }
 .cart-list__img {
     min-width: 50px;
@@ -344,11 +379,12 @@
     text-align: justify;
 }
 .content-introduce-title__head{
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--head-color);
-    /* font-weight: 500; */
     margin-bottom: 50px;
+    font-family: var(--font-head);
     letter-spacing: 5px;
+    font-weight: 500;
 }
 .content-introduce-title__text p {
     font-size: 1.6rem;
@@ -399,8 +435,9 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .content-special__head {
-    /* font-family: 'Nautilus Pompilius', sans-serif; */
-    font-size: 3.5rem;
+    font-family: var(--font-head);
+    font-size: 5rem;
+    letter-spacing: 2px;
     color: #e75b1e;
     position: absolute;
     top: 15%;
@@ -513,6 +550,7 @@
     color: #e75b1e;
     font-family: var(--font-head);
     text-align: center;
+    letter-spacing: 2px;
     /* background: -webkit-linear-gradient(var(--head-color) , var(--primary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -590,10 +628,10 @@
 }
 .content-transport__head{
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin: 50px 0;
     color: var(--head-color);
-    
+    font-family: var(--font-head);
 }
 .content-transport__box {
     width: 1200px;
@@ -656,12 +694,14 @@
 }
 .content-review__head {
     position: relative;
-    font-size: 3.5rem;
-    z-index: 1;
     text-align: center;
-    color:var(--head-color);
+    font-size: 5rem;
+    font-family: var(--font-head);
     font-weight: 700;
     padding: 50px 0;
+    color:var(--head-color);
+    z-index: 1;
+    letter-spacing: 2px;
 }
 .content-review-item {
     z-index: 1;
@@ -1390,3 +1430,86 @@ select {
     color: var(--button-color);
 }
 /* End order */
+/* Gioi thieu am thuc */
+.content-intro {
+    background-image: url(../img/bkgioithiru.jpg);
+    width: 100%;
+    background-repeat: repeat;
+}
+.content-wrap {
+    margin-bottom: 50px;
+}
+.content-banner {
+    margin-top: 8rem;
+    background-image: url(../img/banner.10879cd6.jpg);
+    width: 100%;
+    height: 320px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.content-banner__head {
+    font-family: var(--font-head);
+    color: var(--head-color);
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+.content__desc {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 50px;
+    line-height: 1.6rem;
+}
+.content-area {
+    margin: 20px 0 ;
+}
+.content-area__head {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--head-color);
+    padding-left: 5px;
+    border-left: 2px solid var(--button-color);
+}
+.content-area__more {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: justify;
+}
+.content-area__wrap-img {
+    margin-top: 10px;
+}
+.content-area__img {
+    height: 400px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.content-banner__wrap {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    margin: 50px 0;
+}
+.content-area__mota {
+    font-size: 1.6rem;
+    font-style: italic;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+.content-banner-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin: 30px auto;
+    font-weight: 400;
+}
+.content-banner-link p{
+    margin: 0 10px;
+}
