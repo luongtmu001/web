@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">     
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/login.css">                
+    <link rel="stylesheet" href="./assets/css/login.css">    
     <title>Vietnamese Food</title>
 </head>
 <body>
@@ -39,19 +39,19 @@
                                     Chưa có tài khoản?
                                     <p class="content-login__msg-create">Tạo tài khoản</p>
                                 </span>
-                                <form action="" class="content-login__form">
+                                <form action="php/login.php" method = "POST" role="form" class="content-login__form">
                                     <div class="content-login__form-filed">
                                         <label for="Email address">Email address</label>
                                         <div class="content-login__form--wrapper">
                                             <i class="far fa-envelope"></i>
-                                            <input type="email" placeholder="Your email">
+                                            <input type="email" placeholder="Your email" name = "userEmail">
                                         </div>
                                     </div>
                                     <div class="content-login__form-filed">
                                         <label for="Password">Password</label>
                                         <div class="content-login__form--wrapper">
                                             <i class="fas fa-lock"></i>
-                                            <input type="password" placeholder="Your password">
+                                            <input type="password" placeholder="Your password" name = "userPassword">
                                         </div>
                                     </div>
                                     <div class="content-login__commit">

@@ -5,10 +5,10 @@ window.addEventListener("scroll", function(){
 });
 // Đến trang mới khi click
 document.getElementById("foodLink").onclick = function () {
-    location.href = "Food.html";
+    location.href = "foodmenu.html";
 };
 document.getElementById("drinkLink").onclick = function () {
-    location.href = "Drink.html";
+    location.href = "drinkmenu.html";
 };
 document.getElementById("NorthFoodLink").onclick = function () {
     location.href = "NorthFood.html";
