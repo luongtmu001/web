@@ -25,10 +25,7 @@
     padding: 10px 25px;
     margin: 0 5px;
 }
-.slider__btn:hover{
-    background-color: var(--button-color);
-    color: var(--white-color);
-}
+
 .product--search__input{
     margin-top: 50px;
     width: 50%;
