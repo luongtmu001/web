@@ -416,6 +416,7 @@
 .characteristics__detail {
     line-height: 1.8rem;
 }
+/* Start content special */
 .content-special {
     height: 936px;
     background-attachment: fixed;
@@ -540,6 +541,8 @@
     padding: 0 10px 10px 10px;
     color: var(--head-color);
 }
+/* end */
+/* Start content glary */
 .content-galary {
     background-color: var(--white-color);
 }
@@ -657,6 +660,8 @@
     margin: 25px 0;
     color: var(--text-color);
 } 
+/* End content galary */
+/* Start content-review */
 .content-review {
     position: relative;
     background-image: url(../img/bk-review.jpg);
@@ -756,6 +761,7 @@
     border-radius: 50%;
     margin: 0 5px;
 }
+/* End content review */
 /* Footer start */
 .footer-registration {
     background-image: url(../img/dangky-bk.jpg);
@@ -836,13 +842,13 @@ footer{
     background-size: cover;
     background-position:center;
 }
-footer::after{
+#footer::after{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(51, 51, 51, 0.7);
 }
 .footer__img {
     margin: auto;

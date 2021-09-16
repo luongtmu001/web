@@ -39,26 +39,26 @@
                                     Chưa có tài khoản?
                                     <p class="content-login__msg-create">Tạo tài khoản</p>
                                 </span>
-                                <form action="php/login.php" method = "POST" role="form" class="content-login__form">
+                                <form onsubmit = "return check();" action="" name = "loginForm" method = "" role="form" class="content-login__form">
                                     <div class="content-login__form-filed">
                                         <label for="Email address">Email address</label>
                                         <div class="content-login__form--wrapper">
                                             <i class="far fa-envelope"></i>
-                                            <input type="email" placeholder="Your email" name = "userEmail">
+                                            <input name = "email" type="email" placeholder="Your email">
                                         </div>
                                     </div>
                                     <div class="content-login__form-filed">
                                         <label for="Password">Password</label>
                                         <div class="content-login__form--wrapper">
                                             <i class="fas fa-lock"></i>
-                                            <input type="password" placeholder="Your password" name = "userPassword">
+                                            <input name = "password" type="password" placeholder="Your password">
                                         </div>
                                     </div>
                                     <div class="content-login__commit">
                                         <input type="checkbox">
                                         <span class="content-login__commit-msg">Save your password</span>
                                     </div>
-                                    <button class="content-login__btn">Login</button>
+                                    <button  type ="submit" class="content-login__btn">Login</button>
                                 </form>
                                 
                                 <div class="content-login__separate">
@@ -85,5 +85,6 @@
             </div>  
         </section>
     </main> 
+    <script src = "./assets/js/login.js"></script>
 </body>
 </html>
